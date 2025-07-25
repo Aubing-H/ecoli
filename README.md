@@ -31,4 +31,4 @@ my-project/
 - 安装环境 `poetry add numpy python-dotenv`，安装开发环境 `poetry add pytest --group dev`
 - 兼容从 `requirement.txt` 安装，`poetry add $(cat requirements.txt)`
 - 激活虚拟环境 `poetry shell`(需要安装shell引擎：`poetry self add poetry-plugin-shell`)，不激活直接运行 `poetry run python src/my_project/main.py`
-- 目前的 .toml 已经有所修改，因为原来运行测试无法识别项目包路径
+- 根据目前的 .toml 调整项目的配置 [project] -> [tool.poetry]
